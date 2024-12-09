@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrub-A-Dog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header-nav-container">
+        <div id="header-section" class="header">
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
+            <h1>Scrub-A-Dog</h1>
+            <p><em>Clean Pets. Clean Owners.</em></p>
+        </div>
+        <nav id="nav-section" class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section id="banner">
+        <img src="images/dog-banner.jpg" alt="Dog Grooming Banner">
+    </section>
+    <main id="main-content">
+        <section class="services">
+            <div class="service-column dark-blue">
+                <h2>Basic Groom</h2>
+                <img src="images/dog-bath.jpg" alt="Basic Groom">
+                <ul>
+                    <li>Cut and style</li>
+                    <li>Bath</li>
+                    <li>Blow dry and brush</li>
+                </ul>
+            </div>
+            <div class="service-column dark-blue">
+                <h2>Full Groom</h2>
+                <img src="images/dog-nail-trim.jpg" alt="Full Groom">
+                <ul>
+                    <li>Cut and style</li>
+                    <li>Bath</li>
+                    <li>Blow dry and brush</li>
+                    <li>Nail trim</li>
+                    <li>Ear cleaning</li>
+                </ul>
+            </div>
+            <div class="service-column dark-blue">
+                <h2>Pampered Groom</h2>
+                <img src="images/dog-towel.jpg" alt="Pampered Groom">
+                <ul>
+                    <li>Cut and style</li>
+                    <li>Oatmeal massage bath</li>
+                    <li>Facial</li>
+                    <li>Blow dry and brush</li>
+                    <li>Nail trim</li>
+                    <li>Ear cleaning</li>
+                    <li>Teeth brushing</li>
+                </ul>
+            </div>
+        </section>
+        <section class="grooming-rates">
+            <h2>Grooming Rates</h2>
+            <table class="rate-table">
+                <thead>
+                    <tr class="header-row">
+                        <th>Service</th>
+                        <th>Small Dog</th>
+                        <th>Medium Dog</th>
+                        <th>Large Dog</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Deshed</td>
+                        <td>$25</td>
+                        <td>$30</td>
+                        <td>$36</td>
+                    </tr>
+                    <tr>
+                        <td>Ear Cleaning</td>
+                        <td>$10</td>
+                        <td>$14</td>
+                        <td>$21</td>
+                    </tr>
+                    <tr>
+                        <td>Nail Clipping</td>
+                        <td>$10</td>
+                        <td>$12</td>
+                        <td>$15</td>
+                    </tr>
+                    <tr>
+                        <td>Flea Treatment</td>
+                        <td>$15</td>
+                        <td>$23</td>
+                        <td>$30</td>
+                    </tr>
+                    <tr>
+                        <td>Teeth Brushing</td>
+                        <td colspan="3">$5</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="rate-text">
+                <p>
+                    <b>Small Dogs:</b> Deshed costs $25. Ear cleaning is $10. Nail clipping is $10. Flea treatment is $15. Teeth brushing is a flat $5.
+                </p>
+                <p>
+                    <b>Medium Dogs:</b> Deshed costs $30. Ear cleaning is $14. Nail clipping is $12. Flea treatment is $23. Teeth brushing is a flat $5.
+                </p>
+                <p>
+                    <b>Large Dogs:</b> Deshed costs $36. Ear cleaning is $21. Nail clipping is $15. Flea treatment is $30. Teeth brushing is a flat $5.
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Scrub-A-Dog. All rights reserved.</p>
+        <p>contact@polipaws.net</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

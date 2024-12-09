@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrub-A-Dog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header-nav-container">
+        <div id="header-section" class="header">
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
+            <h1>Scrub-A-Dog</h1>
+            <p><em>Clean Pets. Clean Owners.</em></p>
+        </div>
+        <nav id="nav-section" class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section id="banner">
+        <img src="images/dog-banner.jpg" alt="Dog Grooming Banner">
+    </section>
+    <main id="main-content">
+        <h2 class="heading">Contact us to book your appointment.</h2>
+        <form action="submit_booking.php" method="POST">
+            <div class="form-container">
+                <!-- Customer Information Fieldset -->
+                <fieldset>
+                    <legend>Customer Information</legend>
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required>
+
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" required>
+
+                    <label for="pet-name">Pet's Name:</label>
+                    <input type="text" id="pet-name" name="pet-name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="appointment-date">Date:</label>
+                    <input type="date" id="appointment-date" name="appointment-date" required>
+                </fieldset>
+
+                <!-- Service Request Fieldset -->
+                <fieldset>
+                    <legend>Service Request</legend>
+                    <p>I would like the following service:</p>
+                    <label>
+                        <input type="radio" name="service" value="basic-groom" required>
+                        Basic Groom
+                    </label>
+                    <label>
+                        <input type="radio" name="service" value="full-groom" required>
+                        Full Groom
+                    </label>
+                    <label>
+                        <input type="radio" name="service" value="pampered-groom" required>
+                        Pampered Groom
+                    </label>
+
+                    <label for="preferred-groomer">Preferred Groomer:</label>
+                    <select id="preferred-groomer" name="preferred-groomer">
+                        <option value="none" selected>No preference</option>
+                        <option value="kelsey">Kelsey</option>
+                        <option value="avery">Avery</option>
+                        <option value="william">William</option>
+                        <option value="mathew">Mathew</option>
+                    </select>
+
+                    <!-- Special Request or Instructions -->
+                    <label for="special-requests">Special requests or instructions</label>
+                    <textarea id="special-requests" name="special-requests" rows="4"></textarea>
+                </fieldset>
+            </div>
+            <div class="form-submit-container">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Scrub-A-Dog. All rights reserved.</p>
+        <p>contact@polipaws.net</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
